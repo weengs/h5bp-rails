@@ -20,19 +20,7 @@ prepend_to_file 'app/assets/stylesheets/application.css.new' do
 end
 gsub_file 'app/assets/stylesheets/application.css', /==\|==/, '==|==.'
 
-get "https://github.com/h5bp/html5-boilerplate/raw/master/css/normalize.css", "app/assets/stylesheets/application.css.new"
-prepend_to_file 'app/assets/stylesheets/application.css.new' do
-  " /*
- * This is a manifest file that'll automatically include all the stylesheets available in this directory
- * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
- * the top of the compiled file, but it's generally better to create a new file per style scope.
- *= require_self
- *= require_tree .
-*/
-
-"
-end
-gsub_file 'app/assets/stylesheets/application.css', /==\|==/, '==|==.'
+get "https://github.com/h5bp/html5-boilerplate/raw/master/css/normalize.css", "app/assets/stylesheets/normalize.css.new"
 
 # Download HTML5 Boilerplate site root assets
 get "https://github.com/russfrisch/html5-boilerplate/raw/master/apple-touch-icon-114x114-precomposed.png", "public/apple-touch-icon-114x114-precomposed.png"
