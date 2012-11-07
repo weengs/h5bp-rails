@@ -6,10 +6,10 @@ This template can be considered an upgrade of the Rails 3.0.x application templa
 How to Use
 ===========
 Run directly from github:<br>
-`rails new <appname> -m https://github.com/russfrisch/h5bp-rails/raw/master/h5bp.rb`<br>
+`rails new <appname> -m https://github.com/jmjlouis/h5bp-rails/raw/master/h5bp.rb`<br>
 
 Can also be applied to an existing project, but will need some integration by hand:<br>
-`rake rails:template LOCATION=https://github.com/russfrisch/h5bp-rails/raw/master/h5bp_apply.rb`<br>
+`rake rails:template LOCATION=https://github.com/jmjlouis/h5bp-rails/raw/master/h5bp_apply.rb`<br>
 
 What This Template Does
 ========================
