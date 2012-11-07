@@ -24,7 +24,7 @@ prepend_to_file 'app/assets/stylesheets/application.css' do
 end
 get "https://github.com/h5bp/html5-boilerplate/raw/master/css/main.css", "app/assets/stylesheets/application-post.css"
 get "https://github.com/h5bp/html5-boilerplate/raw/master/css/main.css", "app/assets/stylesheets/application-pre.css"
-get "https://github.com/h5bp/html5-boilerplate/raw/master/css/normalize.css", "app/assets/stylesheets/normalize.css"
+get "https://github.com/h5bp/html5-boilerplate/raw/master/css/normalize.css", "app/assets/stylesheets/application-normalize.css"
 gsub_file 'app/assets/stylesheets/application-pre.css', /\/\*\s=*\n\s*Helper classes.*/m, ''
 gsub_file 'app/assets/stylesheets/application-post.css', /\A.*Author's custom styles\s*=*\s\*\//m, ''
 gsub_file 'app/assets/stylesheets/application-pre.css', /==\|==/, '==|==.'
