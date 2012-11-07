@@ -20,7 +20,7 @@ prepend_to_file 'app/assets/stylesheets/application.css.new' do
 end
 gsub_file 'app/assets/stylesheets/application.css', /==\|==/, '==|==.'
 
-get "https://github.com/h5bp/html5-boilerplate/raw/master/css/normalize.css", "app/assets/stylesheets/application-normalize.css.new"
+get "https://github.com/h5bp/html5-boilerplate/raw/master/css/normalize.css", "app/assets/stylesheets/normalize.css"
 
 # Download HTML5 Boilerplate site root assets
 get "https://github.com/russfrisch/html5-boilerplate/raw/master/apple-touch-icon-114x114-precomposed.png", "public/apple-touch-icon-114x114-precomposed.png"
