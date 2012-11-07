@@ -25,8 +25,13 @@ end
 get "https://github.com/h5bp/html5-boilerplate/raw/master/css/main.css", "app/assets/stylesheets/application-post.css"
 get "https://github.com/h5bp/html5-boilerplate/raw/master/css/main.css", "app/assets/stylesheets/application-pre.css"
 get "https://github.com/h5bp/html5-boilerplate/raw/master/css/normalize.css", "app/assets/stylesheets/normalize.css"
+<<<<<<< HEAD
 gsub_file 'app/assets/stylesheets/application-pre.css', /\/\*\s=*\n\s*EXAMPLE Media Query for Responsive Design.*/m, ''
 gsub_file 'app/assets/stylesheets/application-post.css', /\A.*Primary styles.\n\s*Author:\s*=*\s\*\//m, ''
+=======
+gsub_file 'app/assets/stylesheets/application-pre.css', /\/\*\s=*\n\s*Helper classes.*/m, ''
+gsub_file 'app/assets/stylesheets/application-post.css', /\A.*Author's custom styles\s*=*\s\*\//m, ''
+>>>>>>> Edited regexp to match new css file
 gsub_file 'app/assets/stylesheets/application-pre.css', /==\|==/, '==|==.'
 gsub_file 'app/assets/stylesheets/application-post.css', /==\|==/, '==|==.'
 
